@@ -24,3 +24,6 @@ define('PRIVATE_PATH', __DIR__);
 define('PUBLIC_PATH', dirname(__DIR__));
 
 define('SHARED_PATH', PRIVATE_PATH . DS . 'shared');
+
+//root url to a PHP constant
+define('WWW_ROOT', '');
