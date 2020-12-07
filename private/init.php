@@ -27,3 +27,13 @@ define('SHARED_PATH', PRIVATE_PATH . DS . 'shared');
 
 //root url to a PHP constant
 define('WWW_ROOT', '');
+
+/**
+ *  Loads basic functions
+ */
+require_once 'functions.php';
+
+/**
+ *  Database connection file
+ */
+require_once 'database.php';
