@@ -15,3 +15,15 @@ function url($path)
 
     return WWW_ROOT . $path;
 }
+
+/**
+ *  url redirection
+ *
+ * @param String $location
+ * @return void
+ */
+function redirect($location)
+{
+    header('Location: ' . $location);
+    exit;
+}

@@ -37,3 +37,8 @@ require_once 'functions.php';
  *  Database connection file
  */
 require_once 'database.php';
+
+/**
+ *  Database common functions
+ */
+require_once 'database_functions.php';
