@@ -3,7 +3,15 @@
 <!-- Admin Header -->
 <?php include_once SHARED_PATH . DS . 'admin_header.php'; ?>
 
+<<<<<<< HEAD
 <?php var_dump(); ?>
+=======
+<!-- Admin Nav -->
+<?php include_once SHARED_PATH . DS . 'admin_nav.php'; ?>
+
+<!-- Javascript scripts file -->
+<?php include_once SHARED_PATH . DS . 'js_scripts.php'; ?>
+>>>>>>> new
 
 <!-- Admin Footer -->
 <?php include_once SHARED_PATH . DS . 'admin_footer.php'; ?>

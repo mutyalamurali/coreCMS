@@ -27,3 +27,27 @@ function redirect($location)
     header('Location: ' . $location);
     exit;
 }
+
+/**
+ *  urlencode function
+ *  It uses after '?' in the url
+ *
+ * @param string $string
+ * @return void
+ */
+function u($string = "")
+{
+    return urlencode($string);
+}
+
+/**
+ *  rawurlencode function
+ *  It uses before '?' in the url
+ *
+ * @param string $string
+ * @return void
+ */
+function raw_u($string = "")
+{
+    return rawurlencode($string);
+}
