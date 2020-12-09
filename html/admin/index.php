@@ -15,6 +15,7 @@
     </ul>
 </main>
 
+
 <!-- Javascript scripts file -->
 <?php include_once SHARED_PATH . DS . 'js_scripts.php'; ?>
 
