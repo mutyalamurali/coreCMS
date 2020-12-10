@@ -12,7 +12,8 @@
     <h2>Menu Names</h2>
 
     <a href="<?php echo url('admin/subjects/new.php'); ?>">+Create new MenuName</a>
-
+    <br>
+    <br>
     <table class="table table-striped">
         <thead>
             <tr>
@@ -34,9 +35,9 @@
                     <td><?php echo $subject['menu_name']; ?></td>
                     <td><?php echo $subject['position']; ?></td>
                     <td><?php echo $subject['visible']; ?></td>
-                    <td>Show</td>
-                    <td>Edit</td>
-                    <td>Delete</td>
+                    <td><a href="<?php echo url('admin/subjects/show.php?id=' . $subject['id']); ?>">Show</a></td>
+                    <td><a href="<?php echo url('admin/subjects/edit.php?id=' . $subject['id']); ?>">Edit</a></td>
+                    <td><a href="<?php echo url('admin/subjects/delete.php?id=' . $subject['id']); ?>">Delete</a></td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
