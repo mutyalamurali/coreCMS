@@ -79,3 +79,25 @@ function findById($tblName, $id)
         return $result->fetch_assoc();
     }
 }
+
+function create_subject($menu_name, $position, $visible)
+{
+    global $db;
+
+    $sql = "INSERT INTO subjects ";
+    $sql .= "(menu_name, position, visible) VALUES (?, ?, ?)";
+
+    $stmt = $db->stmt_init();
+    if (!$stmt->prepare($sql)) {
+        die('Database insert query failed: ' . $db->error);
+    } else {
+        $stmt->bind_param('sii', $menu_name, $position, $visible);
+        $result = $stmt->execute();
+
+        if ($result == FALSE) {
+            die('Can not insert new subject' . $db->error);
+        } else {
+            return TRUE;
+        }
+    }
+}
