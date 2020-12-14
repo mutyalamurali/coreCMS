@@ -35,8 +35,8 @@
                     <td><?php echo $subject['menu_name']; ?></td>
                     <td><?php echo $subject['position']; ?></td>
                     <td><?php echo $subject['visible']; ?></td>
-                    <td><a href="<?php echo url('admin/subjects/show.php?id=' . $subject['id']); ?>">Show</a></td>
-                    <td><a href="<?php echo url('admin/subjects/edit.php?id=' . $subject['id']); ?>">Edit</a></td>
+                    <td><a class="btn btn-info" href="<?php echo url('admin/subjects/show.php?id=' . $subject['id']); ?>">Show</a></td>
+                    <td><a class="btn btn-warning" href="<?php echo url('admin/subjects/edit.php?id=' . $subject['id']); ?>">Edit</a></td>
                     <td><button class="btn btn-danger del-subject">Delete</button></td>
                 </tr>
             <?php endforeach; ?>
@@ -48,6 +48,7 @@
 <!-- Javascript scripts file -->
 <?php include_once SHARED_PATH . DS . 'js_scripts.php'; ?>
 
+<!-- Delete ajax function -->
 <script>
     $(".del-subject").click(function() {
         var id = $(this).parents('tr').attr('id');
