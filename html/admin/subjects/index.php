@@ -8,7 +8,7 @@
 <?php include_once SHARED_PATH . DS . 'admin_nav.php'; ?>
 
 <main class="container">
-    <a href="<?php echo url('admin/index.php'); ?>"><i class="fas fa-arrow-left">Back Main Menu</i></a>
+    <a href="<?php echo url('admin/index.php'); ?>">&laquo;Back</a>
     <h2>Menu Names</h2>
 
     <a href="<?php echo url('admin/subjects/new.php'); ?>">+Create new MenuName</a>
