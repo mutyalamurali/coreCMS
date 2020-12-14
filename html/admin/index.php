@@ -3,7 +3,6 @@
 <!-- Admin Header -->
 <?php include_once SHARED_PATH . DS . 'admin_header.php'; ?>
 
-<?php var_dump(); ?>
 <!-- Admin Nav -->
 <?php include_once SHARED_PATH . DS . 'admin_nav.php'; ?>
 
