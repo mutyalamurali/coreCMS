@@ -110,6 +110,29 @@ function create_subject($menu_name, $position, $visible)
     }
 }
 
+function edit_subject($menu_name, $position, $visible, $id)
+{
+    global $db;
+
+    $sql = "UPDATE subjects ";
+    $sql .= "SET menu_name = ?, position = ?, visible = ? ";
+    $sql .= "WHERE id = ?";
+
+    $stmt = $db->stmt_init();
+    if (!$stmt->prepare($sql)) {
+        die('Database insert query failed: ' . $db->error);
+    } else {
+        $stmt->bind_param('siii', $menu_name, $position, $visible, $id);
+        $result = $stmt->execute();
+
+        if ($result == FALSE) {
+            die('Can not update subject' . $stmt->error);
+        } else {
+            return true;
+        }
+    }
+}
+
 function delete($tblName, $id)
 {
     global $db;
