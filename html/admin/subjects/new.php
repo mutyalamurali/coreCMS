@@ -27,7 +27,6 @@ $num_rows = count($subjects_array);
 <main class="container">
     <a href="<?php echo url('admin/subjects/index.php'); ?>">&laquo;Back</a>
     <h1>Create Menu</h1>
-
     <form action="" method="post">
         <div class="form-group col-4">
             <label for="menu_name">Menu Name:</label>

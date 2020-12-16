@@ -42,3 +42,8 @@ require_once 'database.php';
  *  Database common functions
  */
 require_once 'database_functions.php';
+
+/**
+ *  Common data validation functions
+ */
+require_once 'validations.php';
