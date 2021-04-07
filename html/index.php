@@ -6,8 +6,10 @@
 <!-- Admin Nav -->
 <?php include_once SHARED_PATH . DS . 'public_nav.php'; ?>
 
+<main class="container">
+    <h1>Welcome to CoreCMS Framework</h1>
 
-<h1>Welcome to CoreCMS Framework</h1>
+</main>
 
 <!-- Javascript scripts file -->
 <?php include_once SHARED_PATH . DS . 'js_scripts.php'; ?>
