@@ -14,6 +14,9 @@
  * ----------	---	---------------------------------------------------------
  */
 
+// Session starts
+session_start();
+
 /**
  * file paths to PHP constants
  */
