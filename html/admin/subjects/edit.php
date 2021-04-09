@@ -26,6 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $result = edit_subject($menu_name, $position, $visible, $id);
     if ($result) {
+        $_SESSION['success'] = "Subject update success";
         redirect(url('admin/subjects/index.php'));
     }
 }
