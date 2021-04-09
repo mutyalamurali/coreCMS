@@ -8,6 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $result = create_subject($menu_name, $position, $visible);
     if ($result) {
+        $_SESSION['success'] = "New subject created successfully";
         redirect(url('admin/subjects/index.php'));
     }
 }

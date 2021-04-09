@@ -11,6 +11,9 @@
     <a href="<?php echo url('admin/index.php'); ?>">&laquo;Back</a>
     <h2>Menu Names</h2>
 
+    <?php session_messages('success'); ?>
+    <span id="del-message"></span>
+    <br>
     <a href="<?php echo url('admin/subjects/new.php'); ?>">+Create new MenuName</a>
     <br>
     <br>
@@ -67,6 +70,7 @@
 
             function successFn(data) {
                 $("#" + id).remove();
+                $("#del-message").append(data);
             }
 
             function errFn(xhr, status, errMsg) {

@@ -51,3 +51,18 @@ function raw_u($string = "")
 {
     return rawurlencode($string);
 }
+
+/**
+ * session messages with bootstrap alert messages
+ * like success,danger,warning, ...so on
+ *
+ * @param String $type
+ * @return void
+ */
+function session_messages($type)
+{
+    if (isset($_SESSION[$type]) && $_SESSION[$type] != '') {
+        echo "<p class=\"alert alert-{$type}\">{$_SESSION[$type]}</p>";
+        unset($_SESSION[$type]);
+    }
+}
